@@ -1,0 +1,412 @@
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Replace with your preferred font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00a859; /* Green button color */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #008f4c;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+header .container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.header-left, .header-right {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00a859; /* Logo color */
+    margin-right: 20px;
+}
+
+.delivery-info {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.search-bar i {
+    color: #555;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin-left: 15px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #00a859;
+}
+
+.header-icons span {
+    margin-left: 15px;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Mobile Header Styling (Initially hidden) */
+.mobile-header {
+    display: none;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.mobile-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-header i {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.mobile-header span {
+    font-weight: bold;
+}
+
+.mobile-icons span {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    header .container {
+        display: none; /* Hide desktop header */
+    }
+
+    .mobile-header {
+        display: block; /* Show mobile header */
+    }
+}
+
+@media (max-width: 992px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+     .header-left, .header-right {
+         flex-direction: column;
+         align-items: flex-start;
+         width: 100%;
+     }
+
+     .logo {
+         margin-bottom: 10px;
+     }
+
+     .delivery-info {
+         margin-bottom: 10px;
+     }
+
+    .search-bar {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%; /* Full width search bar */
+    }
+
+    header nav ul {
+        margin-right: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+     .header-icons {
+         width: 100%;
+         text-align: center;
+         margin-top: 10px;
+     }
+}
+
+
+/* Banner Section Styling */
+.banner {
+    background-color: #00a859; /* Green background */
+    color: #fff;
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+.banner .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.banner-content {
+    flex: 1;
+    min-width: 280px;
+}
+
+.banner-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.banner-image img {
+    max-height: 200px; /* Adjust as needed */
+    object-fit: contain;
+}
+
+.banner h2 {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Responsive Banner */
+@media (max-width: 768px) {
+    .banner .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-content, .banner-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+/* Products Section Styling */
+.products-section {
+    padding: 20px 0;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.filter-sort {
+    display: flex;
+    gap: 20px;
+}
+
+.filter, .sort {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.filter i, .sort i {
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+/* Product Grid Styling */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+/* Individual Product Card Styling (These will be created by JS) */
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push buttons/price to bottom */
+}
+
+.product-card img {
+    max-height: 120px; /* Adjust image height */
+    object-fit: contain;
+    margin: 0 auto 10px;
+}
+
+.product-card .best-date {
+    display: inline-block;
+    background-color: #ffcc00; /* Yellow color */
+    font-size: 0.7em;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+
+.product-card h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #555; /* Product name color */
+    flex-grow: 1; /* Allow name to take space */
+}
+
+.product-card .quantity-info {
+    font-size: 0.8em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-card .price-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Push to the bottom */
+}
+
+.product-card .price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #00a859;
+}
+
+.product-card .add-button {
+    background-color: #e0e0e0; /* Light grey button */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .add-button i {
+    color: #333; /* Icon color */
+}
+
+.product-card .add-button:hover {
+    background-color: #ccc;
+}
+
+/* Add media query for products header wrapping */
+@media (max-width: 480px) {
+    .products-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-sort {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .filter, .sort {
+         flex-grow: 1; /* Allow filter/sort to take space */
+         text-align: center;
+    }
+}
+
+/* Footer (Basic styles if you add a footer) */
+/*
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+*/
