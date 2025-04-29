@@ -5,7 +5,7 @@ const products = [
         name: "Organic Green Big Capsicum",
         quantityInfo: "1000gm",
         price: 24.00,
-        imageUrl: "./imagenes1/capsicum.jpg", // Replace with actual image path
+        imageUrl: "./capsicum.jpg", // Replace with actual image path
         bestDate: false // true or false if it has a "Best Date" label
     },
     {
@@ -13,7 +13,7 @@ const products = [
         name: "Seoul Topokki",
         quantityInfo: "1000gm",
         price: 24.00,
-        imageUrl: "./imagenes1/fideos.jpg", // Replace with actual image path
+        imageUrl: "./fideos.jpg", // Replace with actual image path
         bestDate: true
     },
      {
@@ -21,7 +21,7 @@ const products = [
         name: "Cavendish banana Malaysia",
         quantityInfo: "1000gm",
         price: 0.40,
-        imageUrl: "./imagenes1/banana.jpg", // Replace with actual image path
+        imageUrl: "./banana.jpg", // Replace with actual image path
         bestDate: false
     },
      {
@@ -29,7 +29,7 @@ const products = [
         name: "Organic 100% Italian avocado",
         quantityInfo: "1000gm", // Adjust quantity info as needed
         price: 12.35,
-        imageUrl: "./imagenes1/avocado.jpg", // Replace with actual image path
+        imageUrl: "./avocado.jpg", // Replace with actual image path
         bestDate: false
     },
     // Add more product objects here following the same structure
@@ -38,7 +38,7 @@ const products = [
         name: "Mahin Brand Basmati Rice",
         quantityInfo: "1000gm",
         price: 24.00,
-        imageUrl: "./imagenes1/rice.jpg", // Replace with actual image path
+        imageUrl: "./rice.jpg", // Replace with actual image path
         bestDate: false
     },
      {
@@ -46,7 +46,7 @@ const products = [
         name: "Mehfil Basmati Extra Long Grain",
         quantityInfo: "1000gm",
         price: 13.25,
-        imageUrl: "./imagenes1/basmati.jpg", // Replace with actual image path
+        imageUrl: "./basmati.jpg", // Replace with actual image path
         bestDate: false
     },
      {
@@ -54,7 +54,7 @@ const products = [
         name: "Lemon Big Size",
         quantityInfo: "1000gm", // Adjust
         price: 4.40,
-        imageUrl: "./imagenes1/lemon.jpg", // Replace with actual image path
+        imageUrl: "./lemon.jpg", // Replace with actual image path
         bestDate: false
     },
     // ... add all other products from the image
