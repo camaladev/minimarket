@@ -2,7 +2,7 @@
 const products = [
     {
         id: 1,
-        name: "Organic Green Big Capsicum",
+        name: "pimenton",
         quantityInfo: "1000gm",
         price: 24.00,
         imageUrl: "./capsicum.jpg", // Replace with actual image path
@@ -10,7 +10,7 @@ const products = [
     },
     {
         id: 2,
-        name: "Seoul Topokki",
+        name: "fideos",
         quantityInfo: "1000gm",
         price: 24.00,
         imageUrl: "./fideos.jpg", // Replace with actual image path
@@ -18,7 +18,7 @@ const products = [
     },
      {
         id: 3,
-        name: "Cavendish banana Malaysia",
+        name: "platanos",
         quantityInfo: "1000gm",
         price: 0.40,
         imageUrl: "./banana.jpg", // Replace with actual image path
@@ -26,7 +26,7 @@ const products = [
     },
      {
         id: 4,
-        name: "Organic 100% Italian avocado",
+        name: "palta",
         quantityInfo: "1000gm", // Adjust quantity info as needed
         price: 12.35,
         imageUrl: "./avocado.jpg", // Replace with actual image path
@@ -35,7 +35,7 @@ const products = [
     // Add more product objects here following the same structure
     {
         id: 5,
-        name: "Mahin Brand Basmati Rice",
+        name: "arroz",
         quantityInfo: "1000gm",
         price: 24.00,
         imageUrl: "./rice.jpg", // Replace with actual image path
@@ -43,7 +43,7 @@ const products = [
     },
      {
         id: 6,
-        name: "Mehfil Basmati Extra Long Grain",
+        name: "",
         quantityInfo: "1000gm",
         price: 13.25,
         imageUrl: "./basmati.jpg", // Replace with actual image path
@@ -51,7 +51,7 @@ const products = [
     },
      {
         id: 7,
-        name: "Lemon Big Size",
+        name: "Limon",
         quantityInfo: "1000gm", // Adjust
         price: 4.40,
         imageUrl: "./lemon.jpg", // Replace with actual image path
